@@ -17,7 +17,7 @@ class StorageHelper: NSObject, StorageHelperProtocol {
     //Injected
     var userDefaults: NSUserDefaults!
     
-    var memes: [MemeObject] {
+    var memes: [MemeObject]! {
         get {
             if let memesData: AnyObject = userDefaults.objectForKey(kNSUserDefaultsMemesKey) {
                 if let memeArray : AnyObject = NSKeyedUnarchiver.unarchiveObjectWithData(memesData as! NSData) {

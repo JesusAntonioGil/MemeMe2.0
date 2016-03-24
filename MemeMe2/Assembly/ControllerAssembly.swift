@@ -21,7 +21,6 @@ class ControllerAssembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(MemeTableViewController.self) {
             (definition) in
                 definition.injectProperty("presenter", with: self.memeTablePresenter())
-                definition.injectProperty("cameraHelperProtocol", with: self.helperAssembly.cameraManager())
         }
     }
     

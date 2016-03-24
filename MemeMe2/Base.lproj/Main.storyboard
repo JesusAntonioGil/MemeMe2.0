@@ -16,7 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-nf-Jkl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QJS-rh-N2j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YJZ-5F-Ub7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b2H-nf-Jkl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3yB-ec-9Aa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b2H-nf-Jkl" secondAttribute="bottom" id="BB3-QB-vOV"/>
+                            <constraint firstAttribute="trailing" secondItem="b2H-nf-Jkl" secondAttribute="trailing" id="h1E-yO-ORw"/>
+                            <constraint firstItem="b2H-nf-Jkl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mzc-wI-Szv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sent Memes" id="xzI-0p-jAr">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="a1v-Ft-m2l">
@@ -27,6 +43,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="a1v-Ft-m2l" id="HRb-e7-oJR"/>
+                        <outlet property="tableView" destination="b2H-nf-Jkl" id="422-xL-NIH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

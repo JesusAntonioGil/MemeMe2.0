@@ -11,22 +11,17 @@ import UIKit
 
 class MemeTableViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIBarButtonItem!
     
     //Injected
     var presenter: MemeTablePresenterProtocol!
-    var cameraHelperProtocol: CameraHelperProtocol!
-    
     
     
     //MARK: LIFE CYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if(cameraHelperProtocol.checkCameraAvailable() == false) {
-            addButton.enabled = false
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,3 +36,25 @@ class MemeTableViewController: UIViewController {
     }
     
 }
+
+
+extension MemeTableViewController: UITableViewDelegate {
+    
+    
+}
+
+extension MemeTableViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+
+
+
+

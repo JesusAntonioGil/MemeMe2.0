@@ -10,5 +10,5 @@ import UIKit
 
 
 @objc protocol StorageHelperProtocol {
-
+    var memes: [MemeObject]! {get set}
 }

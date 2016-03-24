@@ -33,4 +33,9 @@ class HelperAssembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(CameraHelper.self)
     }
     
+    
+    //ActivityHelper
+    internal dynamic func activityHelper() -> AnyObject {
+        return TyphoonDefinition.withClass(ActivityHelper.self)
+    }
 }
