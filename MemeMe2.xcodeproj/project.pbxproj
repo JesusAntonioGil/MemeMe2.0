@@ -8,8 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A40BE8334D06213C953AD650 /* Pods_MemeMe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D7163706411338BC08654A /* Pods_MemeMe2.framework */; };
+		EA7AAC3D1CA40892001AFC67 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */; };
+		EA7AAC3F1CA40A09001AFC67 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */; };
+		EA7AAC431CA40AAF001AFC67 /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */; };
+		EA7AAC451CA40ADF001AFC67 /* MemeTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */; };
+		EA7AAC471CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */; };
+		EA7AAC4B1CA40CCF001AFC67 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4A1CA40CCF001AFC67 /* LocalNotificationHelper.swift */; };
+		EA7AAC4D1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4C1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift */; };
+		EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */; };
+		EA7AAC521CA40DEA001AFC67 /* CameraHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC511CA40DEA001AFC67 /* CameraHelperProtocol.swift */; };
+		EA7AAC551CA41007001AFC67 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */; };
+		EA7AAC571CA41010001AFC67 /* ActivityHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */; };
+		EA7AAC5A1CA41074001AFC67 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC591CA41074001AFC67 /* Meme.swift */; };
+		EA7AAC5D1CA410AF001AFC67 /* StorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC5C1CA410AF001AFC67 /* StorageHelper.swift */; };
+		EA7AAC5F1CA410B9001AFC67 /* StorageHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC5E1CA410B9001AFC67 /* StorageHelperProtocol.swift */; };
 		EAD82B2E1CA400F700B454D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD82B2D1CA400F700B454D8 /* AppDelegate.swift */; };
-		EAD82B301CA400F700B454D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD82B2F1CA400F700B454D8 /* ViewController.swift */; };
 		EAD82B331CA400F700B454D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B311CA400F700B454D8 /* Main.storyboard */; };
 		EAD82B351CA400F700B454D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B341CA400F700B454D8 /* Assets.xcassets */; };
 		EAD82B381CA400F700B454D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B361CA400F700B454D8 /* LaunchScreen.storyboard */; };
@@ -19,9 +32,22 @@
 		38BE0B2F186BB858DFCFD436 /* Pods-MemeMe2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.release.xcconfig"; sourceTree = "<group>"; };
 		45D7163706411338BC08654A /* Pods_MemeMe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B063DA73B5CF6DA6B18CABE /* Pods-MemeMe2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.debug.xcconfig"; sourceTree = "<group>"; };
+		EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
+		EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerAssembly.swift; sourceTree = "<group>"; };
+		EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
+		EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTablePresenter.swift; sourceTree = "<group>"; };
+		EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTablePresenterProtocol.swift; sourceTree = "<group>"; };
+		EA7AAC4A1CA40CCF001AFC67 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
+		EA7AAC4C1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelperProtocol.swift; sourceTree = "<group>"; };
+		EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
+		EA7AAC511CA40DEA001AFC67 /* CameraHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHelperProtocol.swift; sourceTree = "<group>"; };
+		EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
+		EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelperProtocol.swift; sourceTree = "<group>"; };
+		EA7AAC591CA41074001AFC67 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		EA7AAC5C1CA410AF001AFC67 /* StorageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageHelper.swift; sourceTree = "<group>"; };
+		EA7AAC5E1CA410B9001AFC67 /* StorageHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageHelperProtocol.swift; sourceTree = "<group>"; };
 		EAD82B2A1CA400F700B454D8 /* MemeMe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD82B2D1CA400F700B454D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAD82B2F1CA400F700B454D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAD82B321CA400F700B454D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAD82B341CA400F700B454D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD82B371CA400F700B454D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +83,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA7AAC3B1CA4087B001AFC67 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */,
+				EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EA7AAC401CA40A7C001AFC67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC411CA40AA0001AFC67 /* MemeTable */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA7AAC411CA40AA0001AFC67 /* MemeTable */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */,
+				EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */,
+				EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */,
+			);
+			path = MemeTable;
+			sourceTree = "<group>";
+		};
+		EA7AAC481CA40C09001AFC67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC5B1CA410A2001AFC67 /* StorageHelper */,
+				EA7AAC531CA40FFB001AFC67 /* ActivityHelper */,
+				EA7AAC4E1CA40DD2001AFC67 /* CameraHelper */,
+				EA7AAC491CA40CC0001AFC67 /* LocalNotificationHelper */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA7AAC491CA40CC0001AFC67 /* LocalNotificationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC4A1CA40CCF001AFC67 /* LocalNotificationHelper.swift */,
+				EA7AAC4C1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift */,
+			);
+			path = LocalNotificationHelper;
+			sourceTree = "<group>";
+		};
+		EA7AAC4E1CA40DD2001AFC67 /* CameraHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */,
+				EA7AAC511CA40DEA001AFC67 /* CameraHelperProtocol.swift */,
+			);
+			path = CameraHelper;
+			sourceTree = "<group>";
+		};
+		EA7AAC531CA40FFB001AFC67 /* ActivityHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */,
+				EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */,
+			);
+			path = ActivityHelper;
+			sourceTree = "<group>";
+		};
+		EA7AAC581CA41062001AFC67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC591CA41074001AFC67 /* Meme.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA7AAC5B1CA410A2001AFC67 /* StorageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA7AAC5C1CA410AF001AFC67 /* StorageHelper.swift */,
+				EA7AAC5E1CA410B9001AFC67 /* StorageHelperProtocol.swift */,
+			);
+			path = StorageHelper;
+			sourceTree = "<group>";
+		};
 		EAD82B211CA400F700B454D8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				EAD82B2D1CA400F700B454D8 /* AppDelegate.swift */,
-				EAD82B2F1CA400F700B454D8 /* ViewController.swift */,
+				EA7AAC3B1CA4087B001AFC67 /* Assembly */,
+				EA7AAC401CA40A7C001AFC67 /* Controllers */,
+				EA7AAC481CA40C09001AFC67 /* Helpers */,
+				EA7AAC581CA41062001AFC67 /* Model */,
 				EAD82B311CA400F700B454D8 /* Main.storyboard */,
 				EAD82B341CA400F700B454D8 /* Assets.xcassets */,
 				EAD82B361CA400F700B454D8 /* LaunchScreen.storyboard */,
@@ -210,8 +321,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD82B301CA400F700B454D8 /* ViewController.swift in Sources */,
+				EA7AAC471CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift in Sources */,
 				EAD82B2E1CA400F700B454D8 /* AppDelegate.swift in Sources */,
+				EA7AAC551CA41007001AFC67 /* ActivityHelper.swift in Sources */,
+				EA7AAC5D1CA410AF001AFC67 /* StorageHelper.swift in Sources */,
+				EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */,
+				EA7AAC451CA40ADF001AFC67 /* MemeTablePresenter.swift in Sources */,
+				EA7AAC521CA40DEA001AFC67 /* CameraHelperProtocol.swift in Sources */,
+				EA7AAC571CA41010001AFC67 /* ActivityHelperProtocol.swift in Sources */,
+				EA7AAC4B1CA40CCF001AFC67 /* LocalNotificationHelper.swift in Sources */,
+				EA7AAC4D1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift in Sources */,
+				EA7AAC5F1CA410B9001AFC67 /* StorageHelperProtocol.swift in Sources */,
+				EA7AAC5A1CA41074001AFC67 /* Meme.swift in Sources */,
+				EA7AAC3D1CA40892001AFC67 /* HelperAssembly.swift in Sources */,
+				EA7AAC3F1CA40A09001AFC67 /* ControllerAssembly.swift in Sources */,
+				EA7AAC431CA40AAF001AFC67 /* MemeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
