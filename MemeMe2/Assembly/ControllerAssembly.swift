@@ -25,6 +25,15 @@ class ControllerAssembly: TyphoonAssembly {
         }
     }
     
+    //MemeCollectionViewController
+    internal dynamic func memeCollectionViewController() -> AnyObject {
+        return TyphoonDefinition.withClass(MemeCollectionViewController.self) {
+            (definition) in
+            definition.injectProperty("storageHelperProtocol", with: self.helperAssembly.storageHelper())
+            definition.injectProperty("controllerAssembly", with: self)
+        }
+    }
+    
     //GenerateViewController
     
     internal dynamic func generateNavigationController() -> AnyObject {
