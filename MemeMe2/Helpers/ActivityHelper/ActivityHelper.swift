@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import QuartzCore
 
 
-class ActivityHelper: NSObject, ActivityHelperProtocol {
+class ActivityHelper: NSObject {
     
     var viewController: UIViewController!
     
@@ -25,6 +26,14 @@ class ActivityHelper: NSObject, ActivityHelperProtocol {
         }
         
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
+    }
+
+    func getImageFromView(view: UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let img: UIImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return img;
     }
 
 }

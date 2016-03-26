@@ -16,6 +16,7 @@ class MemeTableViewController: UIViewController {
     
     //Injected
     var presenter: MemeTablePresenterProtocol!
+    var controllerAssembly: ControllerAssembly!
     
     
     //MARK: LIFE CYCLE
@@ -32,7 +33,8 @@ class MemeTableViewController: UIViewController {
     //MARK: ACTIONS
     
     @IBAction func onAddImageButtonTap(sender: AnyObject) {
-        
+        let generateNavigationController: UINavigationController = controllerAssembly.generateNavigationController() as! UINavigationController
+        navigationController?.presentViewController(generateNavigationController, animated: true, completion: nil)
     }
     
 }

@@ -29,7 +29,7 @@ class HelperAssembly: TyphoonAssembly {
     }
     
     //CameraHelper
-    internal dynamic func cameraManager() -> AnyObject {
+    internal dynamic func cameraHelper() -> AnyObject {
         return TyphoonDefinition.withClass(CameraHelper.self)
     }
     

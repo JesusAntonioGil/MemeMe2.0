@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A40BE8334D06213C953AD650 /* Pods_MemeMe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D7163706411338BC08654A /* Pods_MemeMe2.framework */; };
+		EA55FD5A1CA5ADC40027AAF2 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55FD591CA5ADC40027AAF2 /* GenerateViewController.swift */; };
 		EA7AAC3D1CA40892001AFC67 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */; };
 		EA7AAC3F1CA40A09001AFC67 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */; };
 		EA7AAC431CA40AAF001AFC67 /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */; };
@@ -18,7 +19,6 @@
 		EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */; };
 		EA7AAC521CA40DEA001AFC67 /* CameraHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC511CA40DEA001AFC67 /* CameraHelperProtocol.swift */; };
 		EA7AAC551CA41007001AFC67 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */; };
-		EA7AAC571CA41010001AFC67 /* ActivityHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */; };
 		EA7AAC5A1CA41074001AFC67 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC591CA41074001AFC67 /* Meme.swift */; };
 		EA7AAC5D1CA410AF001AFC67 /* StorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC5C1CA410AF001AFC67 /* StorageHelper.swift */; };
 		EA7AAC5F1CA410B9001AFC67 /* StorageHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC5E1CA410B9001AFC67 /* StorageHelperProtocol.swift */; };
@@ -32,6 +32,7 @@
 		38BE0B2F186BB858DFCFD436 /* Pods-MemeMe2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.release.xcconfig"; sourceTree = "<group>"; };
 		45D7163706411338BC08654A /* Pods_MemeMe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B063DA73B5CF6DA6B18CABE /* Pods-MemeMe2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.debug.xcconfig"; sourceTree = "<group>"; };
+		EA55FD591CA5ADC40027AAF2 /* GenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
 		EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
 		EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerAssembly.swift; sourceTree = "<group>"; };
 		EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
 		EA7AAC511CA40DEA001AFC67 /* CameraHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHelperProtocol.swift; sourceTree = "<group>"; };
 		EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
-		EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelperProtocol.swift; sourceTree = "<group>"; };
 		EA7AAC591CA41074001AFC67 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		EA7AAC5C1CA410AF001AFC67 /* StorageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageHelper.swift; sourceTree = "<group>"; };
 		EA7AAC5E1CA410B9001AFC67 /* StorageHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageHelperProtocol.swift; sourceTree = "<group>"; };
@@ -83,6 +83,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA55FD581CA5ADB10027AAF2 /* Generate */ = {
+			isa = PBXGroup;
+			children = (
+				EA55FD591CA5ADC40027AAF2 /* GenerateViewController.swift */,
+			);
+			path = Generate;
+			sourceTree = "<group>";
+		};
 		EA7AAC3B1CA4087B001AFC67 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7AAC411CA40AA0001AFC67 /* MemeTable */,
+				EA55FD581CA5ADB10027AAF2 /* Generate */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				EA7AAC541CA41007001AFC67 /* ActivityHelper.swift */,
-				EA7AAC561CA41010001AFC67 /* ActivityHelperProtocol.swift */,
 			);
 			path = ActivityHelper;
 			sourceTree = "<group>";
@@ -322,13 +330,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7AAC471CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift in Sources */,
+				EA55FD5A1CA5ADC40027AAF2 /* GenerateViewController.swift in Sources */,
 				EAD82B2E1CA400F700B454D8 /* AppDelegate.swift in Sources */,
 				EA7AAC551CA41007001AFC67 /* ActivityHelper.swift in Sources */,
 				EA7AAC5D1CA410AF001AFC67 /* StorageHelper.swift in Sources */,
 				EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */,
 				EA7AAC451CA40ADF001AFC67 /* MemeTablePresenter.swift in Sources */,
 				EA7AAC521CA40DEA001AFC67 /* CameraHelperProtocol.swift in Sources */,
-				EA7AAC571CA41010001AFC67 /* ActivityHelperProtocol.swift in Sources */,
 				EA7AAC4B1CA40CCF001AFC67 /* LocalNotificationHelper.swift in Sources */,
 				EA7AAC4D1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift in Sources */,
 				EA7AAC5F1CA410B9001AFC67 /* StorageHelperProtocol.swift in Sources */,
