@@ -12,6 +12,9 @@ import QuartzCore
 
 class ActivityHelper: NSObject {
     
+    //Inject
+    var storageHelperProtocol: StorageHelperProtocol!
+    
     var viewController: UIViewController!
     
     
@@ -23,6 +26,7 @@ class ActivityHelper: NSObject {
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
         activityViewController.completionWithItemsHandler =  {
             (activity, success, items, error) in
+            self.saveMeme(meme)
         }
         
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
@@ -34,6 +38,16 @@ class ActivityHelper: NSObject {
         let img: UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         return img;
+    }
+    
+    //MARK: PRIVATE
+    
+    func saveMeme(meme: Meme) {
+        let memeObject = MemeObject(topText: meme.topText, bottomText: meme.bottomText, image: meme.image, memeImage: meme.memeImage)
+        
+        var memeArray = storageHelperProtocol.memes
+        memeArray.append(memeObject)
+        storageHelperProtocol.memes = memeArray
     }
 
 }

@@ -36,6 +36,9 @@ class HelperAssembly: TyphoonAssembly {
     
     //ActivityHelper
     internal dynamic func activityHelper() -> AnyObject {
-        return TyphoonDefinition.withClass(ActivityHelper.self)
+        return TyphoonDefinition.withClass(ActivityHelper.self) {
+            (definition) in
+                definition.injectProperty("storageHelperProtocol", with: self.storageHelper())
+        }
     }
 }
