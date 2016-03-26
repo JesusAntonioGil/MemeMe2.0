@@ -15,14 +15,19 @@ class MemeTableViewController: UIViewController {
     @IBOutlet weak var addButton: UIBarButtonItem!
     
     //Injected
-    var presenter: MemeTablePresenterProtocol!
+    var storageHelperProtocol: StorageHelperProtocol!
     var controllerAssembly: ControllerAssembly!
-    
     
     //MARK: LIFE CYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,23 +42,39 @@ class MemeTableViewController: UIViewController {
         navigationController?.presentViewController(generateNavigationController, animated: true, completion: nil)
     }
     
+    
+    
 }
 
 
 extension MemeTableViewController: UITableViewDelegate {
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 90.0
+    }
     
 }
 
 extension MemeTableViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return storageHelperProtocol.memes.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: MemeTableViewCell = tableView.dequeueReusableCellWithIdentifier("MemeTableViewCell", forIndexPath: indexPath) as! MemeTableViewCell
+        cell.memeObject = storageHelperProtocol.memes[indexPath.row]
+        return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let detailViewController: DetailViewController = controllerAssembly.detailViewController() as! DetailViewController
+        detailViewController.memeObject = storageHelperProtocol.memes[indexPath.row]
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
 }
 
 

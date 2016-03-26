@@ -20,13 +20,9 @@ class ControllerAssembly: TyphoonAssembly {
     internal dynamic func memeTableViewController() -> AnyObject {
         return TyphoonDefinition.withClass(MemeTableViewController.self) {
             (definition) in
-                definition.injectProperty("presenter", with: self.memeTablePresenter())
+                definition.injectProperty("storageHelperProtocol", with: self.helperAssembly.storageHelper())
                 definition.injectProperty("controllerAssembly", with: self)
         }
-    }
-    
-    internal dynamic func memeTablePresenter() -> AnyObject {
-        return TyphoonDefinition.withClass(MemeTablePresenter.self)
     }
     
     //GenerateViewController
@@ -44,6 +40,14 @@ class ControllerAssembly: TyphoonAssembly {
                 definition.injectProperty("cameraHelperProtocol", with: self.helperAssembly.cameraHelper())
                 definition.injectProperty("activityHelper", with: self.helperAssembly.activityHelper())
         }
+    }
+    
+    //DetailViewController
+    
+    internal dynamic func detailViewController() -> AnyObject {
+        return TyphoonDefinition.withFactory(self.storyboard("Main", factory: self), selector: "instantiateViewControllerWithIdentifier:", parameters: { (method) -> Void in
+            method.injectParameterWith("DetailViewController")
+            }, configuration: nil)
     }
     
     //MARK: Storyboards

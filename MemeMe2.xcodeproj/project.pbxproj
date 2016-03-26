@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A40BE8334D06213C953AD650 /* Pods_MemeMe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D7163706411338BC08654A /* Pods_MemeMe2.framework */; };
+		EA0772D21CA74B7800D09C10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0772D11CA74B7800D09C10 /* DetailViewController.swift */; };
 		EA55FD5A1CA5ADC40027AAF2 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55FD591CA5ADC40027AAF2 /* GenerateViewController.swift */; };
 		EA7AAC3D1CA40892001AFC67 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */; };
 		EA7AAC3F1CA40A09001AFC67 /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */; };
 		EA7AAC431CA40AAF001AFC67 /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */; };
-		EA7AAC451CA40ADF001AFC67 /* MemeTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */; };
-		EA7AAC471CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */; };
 		EA7AAC4B1CA40CCF001AFC67 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4A1CA40CCF001AFC67 /* LocalNotificationHelper.swift */; };
 		EA7AAC4D1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4C1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift */; };
 		EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */; };
@@ -26,18 +25,18 @@
 		EAD82B331CA400F700B454D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B311CA400F700B454D8 /* Main.storyboard */; };
 		EAD82B351CA400F700B454D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B341CA400F700B454D8 /* Assets.xcassets */; };
 		EAD82B381CA400F700B454D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD82B361CA400F700B454D8 /* LaunchScreen.storyboard */; };
+		EAF64DFB1CA6A60D00C9E3CB /* MemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF64DFA1CA6A60D00C9E3CB /* MemeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38BE0B2F186BB858DFCFD436 /* Pods-MemeMe2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.release.xcconfig"; sourceTree = "<group>"; };
 		45D7163706411338BC08654A /* Pods_MemeMe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemeMe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B063DA73B5CF6DA6B18CABE /* Pods-MemeMe2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemeMe2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemeMe2/Pods-MemeMe2.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0772D11CA74B7800D09C10 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA55FD591CA5ADC40027AAF2 /* GenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
 		EA7AAC3C1CA40892001AFC67 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
 		EA7AAC3E1CA40A09001AFC67 /* ControllerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerAssembly.swift; sourceTree = "<group>"; };
 		EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
-		EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTablePresenter.swift; sourceTree = "<group>"; };
-		EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTablePresenterProtocol.swift; sourceTree = "<group>"; };
 		EA7AAC4A1CA40CCF001AFC67 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
 		EA7AAC4C1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelperProtocol.swift; sourceTree = "<group>"; };
 		EA7AAC4F1CA40DDE001AFC67 /* CameraHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		EAD82B341CA400F700B454D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD82B371CA400F700B454D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD82B391CA400F700B454D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF64DFA1CA6A60D00C9E3CB /* MemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +83,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA0772D01CA74B6400D09C10 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EA0772D11CA74B7800D09C10 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		EA55FD581CA5ADB10027AAF2 /* Generate */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +113,7 @@
 			children = (
 				EA7AAC411CA40AA0001AFC67 /* MemeTable */,
 				EA55FD581CA5ADB10027AAF2 /* Generate */,
+				EA0772D01CA74B6400D09C10 /* Detail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,8 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7AAC421CA40AAF001AFC67 /* MemeTableViewController.swift */,
-				EA7AAC441CA40ADF001AFC67 /* MemeTablePresenter.swift */,
-				EA7AAC461CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift */,
+				EAF64DFA1CA6A60D00C9E3CB /* MemeTableViewCell.swift */,
 			);
 			path = MemeTable;
 			sourceTree = "<group>";
@@ -329,19 +337,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7AAC471CA40AF2001AFC67 /* MemeTablePresenterProtocol.swift in Sources */,
 				EA55FD5A1CA5ADC40027AAF2 /* GenerateViewController.swift in Sources */,
 				EAD82B2E1CA400F700B454D8 /* AppDelegate.swift in Sources */,
 				EA7AAC551CA41007001AFC67 /* ActivityHelper.swift in Sources */,
 				EA7AAC5D1CA410AF001AFC67 /* StorageHelper.swift in Sources */,
 				EA7AAC501CA40DDE001AFC67 /* CameraHelper.swift in Sources */,
-				EA7AAC451CA40ADF001AFC67 /* MemeTablePresenter.swift in Sources */,
 				EA7AAC521CA40DEA001AFC67 /* CameraHelperProtocol.swift in Sources */,
 				EA7AAC4B1CA40CCF001AFC67 /* LocalNotificationHelper.swift in Sources */,
 				EA7AAC4D1CA40CD8001AFC67 /* LocalNotificationHelperProtocol.swift in Sources */,
 				EA7AAC5F1CA410B9001AFC67 /* StorageHelperProtocol.swift in Sources */,
 				EA7AAC5A1CA41074001AFC67 /* Meme.swift in Sources */,
 				EA7AAC3D1CA40892001AFC67 /* HelperAssembly.swift in Sources */,
+				EAF64DFB1CA6A60D00C9E3CB /* MemeTableViewCell.swift in Sources */,
+				EA0772D21CA74B7800D09C10 /* DetailViewController.swift in Sources */,
 				EA7AAC3F1CA40A09001AFC67 /* ControllerAssembly.swift in Sources */,
 				EA7AAC431CA40AAF001AFC67 /* MemeTableViewController.swift in Sources */,
 			);
