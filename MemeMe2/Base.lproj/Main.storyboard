@@ -191,13 +191,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jJv-0U-FqK">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="3df-Bz-TdY">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="done" id="3df-Bz-TdY">
                             <connections>
                                 <action selector="onDoneButtonTap:" destination="2nL-Ms-MDu" id="jbV-mw-shh"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem enabled="NO" style="done" systemItem="cancel" id="88W-d2-0OI">
+                            <barButtonItem enabled="NO" title="Clear" style="done" id="88W-d2-0OI">
                                 <connections>
                                     <action selector="onCancelButtonTap:" destination="2nL-Ms-MDu" id="geW-DS-luJ"/>
                                 </connections>
@@ -353,7 +353,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-E5-EMQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-E5-EMQ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                         </subviews>

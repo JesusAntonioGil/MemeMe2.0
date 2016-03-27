@@ -26,7 +26,9 @@ class ActivityHelper: NSObject {
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
         activityViewController.completionWithItemsHandler =  {
             (activity, success, items, error) in
-            self.saveMeme(meme)
+            if(success == true && error == nil) {
+                self.saveMeme(meme)
+            }
         }
         
         viewController.presentViewController(activityViewController, animated: true, completion: nil)
